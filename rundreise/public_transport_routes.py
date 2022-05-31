@@ -6,7 +6,7 @@ import datetime
 from datetime import datetime, timezone, timedelta
 from dateutil import parser
 
-def find_trips_between(start, destination, start_time, end_time, only_regional = True):
+def find_routes_between(start, destination, start_time, end_time, only_regional = True):
     client = Client(base_url="https://marudor.de/api")
 
     merged_routes = []
@@ -44,3 +44,12 @@ def find_trips_between(start, destination, start_time, end_time, only_regional =
 
         
     return merged_routes
+
+
+def find_stations(lat, lng):
+    client = Client(base_url="https://marudor.de/api")
+
+    stations_result = geo_station_v_1.sync_detailed(client=client, lat=lat, lng=lng)
+    stations = json.loads(stations_result.content)
+
+    return stations
