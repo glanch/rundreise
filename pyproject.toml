@@ -9,6 +9,7 @@ python = "^3.10"
 bahnhofs-abfahrten-client = {git = "https://github.com/glanch/bahnhofs-abfahrten-client.git", branch = "main"}
 ortools = "^9.3.10497"
 networkx = "^2.8.2"
+python-dateutil = "^2.8.2"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
