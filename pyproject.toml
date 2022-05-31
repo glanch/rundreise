@@ -6,7 +6,7 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-bahnhofs-abfahrten-client = {git = "https://github.com/glanch/bahnhofs-abfahrten-client"}
+bahnhofs-abfahrten-client = {git = "https://github.com/glanch/bahnhofs-abfahrten-client.git", branch = "main"}
 ortools = "^9.3.10497"
 networkx = "^2.8.2"
 
